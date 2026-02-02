@@ -6,10 +6,9 @@ export default function Collapse({ title, content }) {
 
   return (
     <div className="collapse">
-      <button className="collapse__button">
+      <button className="collapse__button" onClick={() => setIsOpen(!isOpen)}>
         {title}
         <img
-          onClick={() => setIsOpen(!isOpen)}
           src="/img/arrow.png"
           alt="Arrow"
           className={`collapse__arrow ${isOpen ? "collapse__arrow--open" : ""}`}
@@ -18,7 +17,17 @@ export default function Collapse({ title, content }) {
 
       {isOpen && (
         <div className="collapse__content">
-          <p>{content}</p>
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index} className="collapse-li">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       )}
     </div>

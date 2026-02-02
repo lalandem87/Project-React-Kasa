@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Banner from "../components/Banner/banner";
 import data from "../data.json";
 import Card from "../components/Card/card";
@@ -9,11 +10,9 @@ export default function Home() {
 
       <div className="card-container">
         {data.map((logement) => (
-          <Card
-            key={logement.id}
-            image={logement.cover}
-            title={logement.title}
-          />
+          <Link to={`/logement/${logement.id}`} key={logement.id}>
+            <Card image={logement.cover} title={logement.title} />
+          </Link>
         ))}
       </div>
     </>

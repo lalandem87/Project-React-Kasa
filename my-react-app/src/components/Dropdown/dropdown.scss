@@ -40,6 +40,10 @@
   }
 }
 
+.collapse-li {
+  list-style: none;
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;

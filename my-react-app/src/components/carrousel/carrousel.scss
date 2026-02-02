@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  margin: 0 auto;
+
+  &__img {
+    object-fit: cover;
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__i {
+    color: #ffffff;
+    font-size: 5em;
+    cursor: pointer;
+  }
+}
+
+.fa-angle-left {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+}
+
+.fa-angle-right {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+}
