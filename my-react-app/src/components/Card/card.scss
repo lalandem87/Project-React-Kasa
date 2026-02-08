@@ -6,6 +6,11 @@
   overflow: hidden;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    width: 335px;
+    height: 255px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -51,4 +56,10 @@
   margin: 0 auto;
   border-radius: 25px;
   width: fit-content;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 2em;
+  }
 }
