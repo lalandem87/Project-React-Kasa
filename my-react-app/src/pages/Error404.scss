@@ -2,24 +2,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6em;
+  text-align: center;
+  min-height: 60vh;
+  justify-content: center;
+  gap: 0;
 
   &__h1 {
-    font-size: 20em;
+    font-size: 288px;
+    font-weight: 700;
     color: #ff6060;
     margin: 0;
-    margin-top: 50px;
+
+    @media (max-width: 768px) {
+      font-size: 96px;
+      margin-bottom: 50px;
+    }
   }
 
   &__p {
-    font-size: 2em;
+    font-size: 36px;
     color: #ff6060;
+    margin: 66px 0;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      padding: 0 20px;
+      margin: 20px 0;
+    }
   }
 
   &__navlink {
     color: black;
-    font-size: 1.1em;
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 80px;
+    text-decoration: underline;
+    margin-top: 50px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-top: 100px;
+    }
   }
 }

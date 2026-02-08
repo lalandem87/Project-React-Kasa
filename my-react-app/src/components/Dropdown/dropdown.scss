@@ -5,6 +5,10 @@
     gap: 35px;
     margin: 0 200px;
     transition: all 1s ease-out;
+
+    @media (max-width: 768px) {
+      margin: 20px;
+    }
   }
 
   &__button {
@@ -19,6 +23,12 @@
     background-color: #ff6060;
     border: 0;
     padding: 15px;
+
+    @media (max-width: 768px) {
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 15px;
+    }
   }
 
   &__arrow {
