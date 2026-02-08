@@ -25,4 +25,19 @@
     font-size: 3em;
     text-wrap: nowrap;
   }
+
+  @media (max-width: 768px) {
+    width: 330px;
+    height: 110px;
+
+    &__img {
+      border-radius: 10px;
+    }
+
+    &__title {
+      left: 38%;
+      font-size: 21px;
+      text-wrap: wrap;
+    }
+  }
 }
