@@ -34,7 +34,7 @@
 .main-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 35px 100px;
+  margin: 50px auto 25px auto;
 }
 
 .card2 {
@@ -81,7 +81,6 @@
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  margin: 0 100px;
 }
 
 .collapse {

@@ -1,8 +1,10 @@
 .header {
+  max-width: 1240px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 7em;
+  padding: 50px 0;
 
   &__nav {
     display: flex;
@@ -17,5 +19,23 @@
 
   &__link:hover {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 50px 20px;
+    &__link {
+      font-size: 15px;
+    }
+
+    &__nav {
+      gap: 25px;
+    }
+  }
+  .header img {
+    object-fit: cover;
+    height: 46px;
+    width: 145px;
   }
 }

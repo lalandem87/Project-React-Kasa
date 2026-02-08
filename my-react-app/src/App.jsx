@@ -6,8 +6,10 @@ import Footer from "./components/Footer/footer";
 function App() {
   return (
     <>
-      <Header />
-      <Router />
+      <div className="container">
+        <Header />
+        <Router />
+      </div>
       <Footer />
     </>
   );
