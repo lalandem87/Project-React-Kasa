@@ -6,11 +6,12 @@ export default function Collapse({ title, content }) {
 
   return (
     <div className="collapse">
-      <button className="collapse__button" onClick={() => setIsOpen(!isOpen)}>
+      <button className="collapse__button">
         {title}
         <img
           src="/img/arrow.png"
           alt="Arrow"
+          onClick={() => setIsOpen(!isOpen)}
           className={`collapse__arrow ${isOpen ? "collapse__arrow--open" : ""}`}
         />
       </button>

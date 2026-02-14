@@ -38,6 +38,10 @@
     &--open {
       transform: rotate(180deg);
     }
+
+    @media (max-width: 768px) {
+      width: 16px;
+    }
   }
 
   &__content {
@@ -47,6 +51,10 @@
     background: #f6f6f673;
     border-radius: 5px;
     padding: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 0.7em;
+    }
   }
 }
 
